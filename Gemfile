@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 70f0c77d6c0268a58dc54c78cad68e556b185300
 source 'https://rubygems.org'
 ruby '2.0.0'
 #ruby-gemset=railstutorial_rails_4_0
@@ -34,8 +29,3 @@ group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 70f0c77d6c0268a58dc54c78cad68e556b185300
