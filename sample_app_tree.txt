@@ -1,0 +1,295 @@
+code/rails_projects/sample_app
+├── app
+│   ├── assets
+│   │   ├── images
+│   │   │   └── rails.png
+│   │   ├── javascripts
+│   │   │   ├── application.js
+│   │   │   ├── static_pages.js.coffee
+│   │   │   └── users.js.coffee
+│   │   └── stylesheets
+│   │       ├── application.css
+│   │       ├── custom.css.scss
+│   │       ├── custom.css.scss~
+│   │       ├── static_pages.css.scss
+│   │       └── users.css.scss
+│   ├── controllers
+│   │   ├── application_controller.rb
+│   │   ├── concerns
+│   │   ├── static_pages_controller.rb
+│   │   ├── static_pages_controller.rb~
+│   │   └── users_controller.rb
+│   ├── helpers
+│   │   ├── application_helper.rb
+│   │   ├── application_helper.rb~
+│   │   ├── static_pages_helper.rb
+│   │   └── users_helper.rb
+│   ├── mailers
+│   ├── models
+│   │   ├── concerns
+│   │   ├── user.rb
+│   │   └── user.rb~
+│   └── views
+│       ├── layouts
+│       │   ├── application.html.erb
+│       │   ├── application.html.erb~
+│       │   ├── _footer.html.erb
+│       │   ├── _footer.html.erb~
+│       │   ├── _header.html.erb
+│       │   ├── _header.html.erb~
+│       │   ├── _shim.html.erb
+│       │   └── _shim.html.erb~
+│       ├── static_pages
+│       │   ├── about.html.erb
+│       │   ├── about.html.erb~
+│       │   ├── contact.html.erb
+│       │   ├── contact.html.erb~
+│       │   ├── help.html.erb
+│       │   ├── help.html.erb~
+│       │   ├── home.html.erb
+│       │   └── home.html.erb~
+│       └── users
+│           ├── new.html.erb
+│           └── new.html.erb~
+├── bin
+│   ├── bundle
+│   ├── rails
+│   └── rake
+├── config
+│   ├── application.rb
+│   ├── application.rb~
+│   ├── boot.rb
+│   ├── database.yml
+│   ├── environment.rb
+│   ├── environments
+│   │   ├── development.rb
+│   │   ├── production.rb
+│   │   └── test.rb
+│   ├── initializers
+│   │   ├── backtrace_silencers.rb
+│   │   ├── filter_parameter_logging.rb
+│   │   ├── inflections.rb
+│   │   ├── mime_types.rb
+│   │   ├── secret_token.rb
+│   │   ├── secret_token.rb~
+│   │   ├── session_store.rb
+│   │   └── wrap_parameters.rb
+│   ├── locales
+│   │   └── en.yml
+│   ├── routes.rb
+│   └── routes.rb~
+├── config.ru
+├── db
+│   ├── development.sqlite3
+│   ├── migrate
+│   │   ├── 20131114145109_create_users.rb
+│   │   ├── 20131114182309_add_index_to_user_email.rb
+│   │   ├── 20131114182309_add_index_to_user_email.rb~
+│   │   └── 20131114183934_add_password_digest_to_users.rb
+│   ├── schema.rb
+│   ├── seeds.rb
+│   └── test.sqlite3
+├── example_user.rb
+├── example_user.rb~
+├── Gemfile
+├── Gemfile~
+├── Gemfile.lock
+├── Guardfile
+├── Guardfile~
+├── Guardfile_old
+├── lib
+│   ├── assets
+│   └── tasks
+├── log
+│   ├── development.log
+│   └── test.log
+├── public
+│   ├── 404.html
+│   ├── 422.html
+│   ├── 500.html
+│   ├── favicon.ico
+│   └── robots.txt
+├── Rakefile
+├── README.md
+├── README.rdoc
+├── README.rdoc~
+├── spec
+│   ├── models
+│   │   ├── user_spec.rb
+│   │   └── user_spec.rb~
+│   ├── requests
+│   │   ├── static_pages_spec.rb
+│   │   ├── static_pages_spec.rb~
+│   │   ├── user_pages_spec.rb
+│   │   └── user_pages_spec.rb~
+│   ├── spec_helper.rb
+│   ├── spec_helper.rb~
+│   └── support
+│       └── utilities.rb
+├── tmp
+│   ├── cache
+│   │   └── assets
+│   │       ├── development
+│   │       │   ├── sass
+│   │       │   │   ├── 39b21d3a1cb391fbf83a80548fd806a863dcc2aa
+│   │       │   │   │   └── bootstrap.scssc
+│   │       │   │   ├── 59a2f88f78f2556eed543e2823e0614b5faae91b
+│   │       │   │   │   ├── custom.css.scssc
+│   │       │   │   │   ├── static_pages.css.scssc
+│   │       │   │   │   └── users.css.scssc
+│   │       │   │   └── e33228742a97be6fe7ba447e0868425865f76031
+│   │       │   │       ├── _accordion.scssc
+│   │       │   │       ├── _alerts.scssc
+│   │       │   │       ├── bootstrap.scssc
+│   │       │   │       ├── _breadcrumbs.scssc
+│   │       │   │       ├── _button-groups.scssc
+│   │       │   │       ├── _buttons.scssc
+│   │       │   │       ├── _carousel.scssc
+│   │       │   │       ├── _close.scssc
+│   │       │   │       ├── _code.scssc
+│   │       │   │       ├── _component-animations.scssc
+│   │       │   │       ├── _dropdowns.scssc
+│   │       │   │       ├── _forms.scssc
+│   │       │   │       ├── _grid.scssc
+│   │       │   │       ├── _hero-unit.scssc
+│   │       │   │       ├── _labels-badges.scssc
+│   │       │   │       ├── _layouts.scssc
+│   │       │   │       ├── _media.scssc
+│   │       │   │       ├── _mixins.scssc
+│   │       │   │       ├── _modals.scssc
+│   │       │   │       ├── _navbar.scssc
+│   │       │   │       ├── _navs.scssc
+│   │       │   │       ├── _pager.scssc
+│   │       │   │       ├── _pagination.scssc
+│   │       │   │       ├── _popovers.scssc
+│   │       │   │       ├── _progress-bars.scssc
+│   │       │   │       ├── _reset.scssc
+│   │       │   │       ├── _scaffolding.scssc
+│   │       │   │       ├── _sprites.scssc
+│   │       │   │       ├── _tables.scssc
+│   │       │   │       ├── _thumbnails.scssc
+│   │       │   │       ├── _tooltip.scssc
+│   │       │   │       ├── _type.scssc
+│   │       │   │       ├── _utilities.scssc
+│   │       │   │       ├── _variables.scssc
+│   │       │   │       └── _wells.scssc
+│   │       │   └── sprockets
+│   │       │       ├── 007bf67cc9f6c5be6c2d5cdc226c317c
+│   │       │       ├── 0aeaf9a676559bbb4ae15395b77658ae
+│   │       │       ├── 13fe41fee1fe35b49d145bcc06610705
+│   │       │       ├── 1a66d8334bb82817e826dbeba46cf0cc
+│   │       │       ├── 2c718ed99a25c7b4f9a1c015eafa423d
+│   │       │       ├── 2f5173deea6c795b8fdde723bb4b63af
+│   │       │       ├── 357970feca3ac29060c1e3861e2c0953
+│   │       │       ├── 3b103f081d7a576254cbdd7b46e3de57
+│   │       │       ├── 41f9435a07550e294ac69db891db5b43
+│   │       │       ├── 44e1c19837a7f2e7866183b57d9d0f8a
+│   │       │       ├── 4ad413f3e3326481d2f5f9327bbd0e12
+│   │       │       ├── 5a5b1ef5525e3bd2763639d80bfcb4b8
+│   │       │       ├── 637d130bab11330efd989e153eaab553
+│   │       │       ├── 6c0f2a2c7346b84a92e2cb81473e251b
+│   │       │       ├── 7fd9aba0a3aba31332e5c0901e933acd
+│   │       │       ├── 7fec35a9652b009002836d216471d5b6
+│   │       │       ├── 82bf9ccf676306bdcc8b878f9e3ad902
+│   │       │       ├── 85ae64edf528ce6e981889f3f3c285d9
+│   │       │       ├── 90fc311c95a685477f8b0075ffd5b1f0
+│   │       │       ├── 96c8a359d272a17849ef34c41615dcc7
+│   │       │       ├── 977ead1d20bc9f7e1c191bd4348f9e3a
+│   │       │       ├── 981fdf59c6c819da5a85424ee749e704
+│   │       │       ├── b2dd5de63cfda8f5ac101735f69896aa
+│   │       │       ├── cb4c2452aafb889fff938f630b33d20b
+│   │       │       ├── cffd775d018f68ce5dba1ee0d951a994
+│   │       │       ├── d6c7ce3ac277094b04690a43947ede22
+│   │       │       ├── d771ace226fc8215a3572e0aa35bb0d6
+│   │       │       ├── d7d5b37686831d37c4dd75e645f5e016
+│   │       │       ├── dda0f614553b052fa0fceeaee2cf226b
+│   │       │       ├── de2fd9fd11c04a582cdbbe3d84a35ae6
+│   │       │       ├── e2bba8cd529c9b6e038cff98e21ec1b4
+│   │       │       ├── e2e8f7f4c2e46b20bbaa95d67e83c41e
+│   │       │       ├── eadfcaed3b0be7882f714b400fb44773
+│   │       │       ├── edbf63d87f211c17de329b8a471a7caf
+│   │       │       ├── f444ae764dff55fac54ec890a29dc964
+│   │       │       └── f7cbd26ba1d28d48de824f0e94586655
+│   │       └── test
+│   │           ├── sass
+│   │           │   ├── 39b21d3a1cb391fbf83a80548fd806a863dcc2aa
+│   │           │   │   └── bootstrap.scssc
+│   │           │   ├── 59a2f88f78f2556eed543e2823e0614b5faae91b
+│   │           │   │   ├── custom.css.scssc
+│   │           │   │   ├── static_pages.css.scssc
+│   │           │   │   └── users.css.scssc
+│   │           │   └── e33228742a97be6fe7ba447e0868425865f76031
+│   │           │       ├── _accordion.scssc
+│   │           │       ├── _alerts.scssc
+│   │           │       ├── bootstrap.scssc
+│   │           │       ├── _breadcrumbs.scssc
+│   │           │       ├── _button-groups.scssc
+│   │           │       ├── _buttons.scssc
+│   │           │       ├── _carousel.scssc
+│   │           │       ├── _close.scssc
+│   │           │       ├── _code.scssc
+│   │           │       ├── _component-animations.scssc
+│   │           │       ├── _dropdowns.scssc
+│   │           │       ├── _forms.scssc
+│   │           │       ├── _grid.scssc
+│   │           │       ├── _hero-unit.scssc
+│   │           │       ├── _labels-badges.scssc
+│   │           │       ├── _layouts.scssc
+│   │           │       ├── _media.scssc
+│   │           │       ├── _mixins.scssc
+│   │           │       ├── _modals.scssc
+│   │           │       ├── _navbar.scssc
+│   │           │       ├── _navs.scssc
+│   │           │       ├── _pager.scssc
+│   │           │       ├── _pagination.scssc
+│   │           │       ├── _popovers.scssc
+│   │           │       ├── _progress-bars.scssc
+│   │           │       ├── _reset.scssc
+│   │           │       ├── _scaffolding.scssc
+│   │           │       ├── _sprites.scssc
+│   │           │       ├── _tables.scssc
+│   │           │       ├── _thumbnails.scssc
+│   │           │       ├── _tooltip.scssc
+│   │           │       ├── _type.scssc
+│   │           │       ├── _utilities.scssc
+│   │           │       ├── _variables.scssc
+│   │           │       └── _wells.scssc
+│   │           └── sprockets
+│   │               ├── 007bf67cc9f6c5be6c2d5cdc226c317c
+│   │               ├── 0aeaf9a676559bbb4ae15395b77658ae
+│   │               ├── 13fe41fee1fe35b49d145bcc06610705
+│   │               ├── 2c718ed99a25c7b4f9a1c015eafa423d
+│   │               ├── 2f5173deea6c795b8fdde723bb4b63af
+│   │               ├── 357970feca3ac29060c1e3861e2c0953
+│   │               ├── 3b103f081d7a576254cbdd7b46e3de57
+│   │               ├── 41f9435a07550e294ac69db891db5b43
+│   │               ├── 44e1c19837a7f2e7866183b57d9d0f8a
+│   │               ├── 4ad413f3e3326481d2f5f9327bbd0e12
+│   │               ├── 637d130bab11330efd989e153eaab553
+│   │               ├── 6c0f2a2c7346b84a92e2cb81473e251b
+│   │               ├── 7fd9aba0a3aba31332e5c0901e933acd
+│   │               ├── 82bf9ccf676306bdcc8b878f9e3ad902
+│   │               ├── 85ae64edf528ce6e981889f3f3c285d9
+│   │               ├── 977ead1d20bc9f7e1c191bd4348f9e3a
+│   │               ├── b2dd5de63cfda8f5ac101735f69896aa
+│   │               ├── cb4c2452aafb889fff938f630b33d20b
+│   │               ├── cffd775d018f68ce5dba1ee0d951a994
+│   │               ├── d6c7ce3ac277094b04690a43947ede22
+│   │               ├── d771ace226fc8215a3572e0aa35bb0d6
+│   │               ├── d7d5b37686831d37c4dd75e645f5e016
+│   │               ├── dda0f614553b052fa0fceeaee2cf226b
+│   │               ├── de2fd9fd11c04a582cdbbe3d84a35ae6
+│   │               ├── eadfcaed3b0be7882f714b400fb44773
+│   │               ├── edbf63d87f211c17de329b8a471a7caf
+│   │               ├── f444ae764dff55fac54ec890a29dc964
+│   │               └── f7cbd26ba1d28d48de824f0e94586655
+│   ├── pids
+│   ├── rspec_guard_result
+│   ├── sessions
+│   └── sockets
+└── vendor
+    └── assets
+        ├── javascripts
+        └── stylesheets
+
+53 directories, 239 files
