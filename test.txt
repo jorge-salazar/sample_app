@@ -1,0 +1,369 @@
+.........FFFFFFFFFFFFFF...........................FFFFFFFFFFFFFFFFFFFFF
+
+Failures:
+
+  1) Authentication authorization as wrong user submitting a PATCH request to the Users#update action 
+     Failure/Error: before { patch user_path(wrong_user) }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/authentication_pages_spec.rb:100:in `block (5 levels) in <top (required)>'
+
+  2) Authentication authorization as wrong user submitting a GET request to the Users#edit action 
+     Failure/Error: before { get edit_user_path(wrong_user) }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/authentication_pages_spec.rb:94:in `block (5 levels) in <top (required)>'
+
+  3) Authentication authorization as wrong user submitting a GET request to the Users#edit action 
+     Failure/Error: before { get edit_user_path(wrong_user) }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/authentication_pages_spec.rb:94:in `block (5 levels) in <top (required)>'
+
+  4) Authentication authorization for non-signed-in users in the Users controller visiting the user index 
+     Failure/Error: before { visit users_path }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/authentication_pages_spec.rb:81:in `block (6 levels) in <top (required)>'
+
+  5) Authentication authorization for non-signed-in users in the Users controller submitting to the update action 
+     Failure/Error: before { patch user_path(user) }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/authentication_pages_spec.rb:76:in `block (6 levels) in <top (required)>'
+
+  6) Authentication authorization for non-signed-in users in the Users controller visiting the edit page 
+     Failure/Error: before { visit edit_user_path(user) }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/authentication_pages_spec.rb:71:in `block (6 levels) in <top (required)>'
+
+  7) Authentication authorization for non-signed-in users when attempting to visit a protected page after signin in should render the disired protection page
+     Failure/Error: visit edit_user_path(user)
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/authentication_pages_spec.rb:54:in `block (5 levels) in <top (required)>'
+
+  8) Authentication signin with valid information 
+     Failure/Error: before { sign_in user }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/authentication_pages_spec.rb:31:in `block (4 levels) in <top (required)>'
+
+  9) Authentication signin with valid information 
+     Failure/Error: before { sign_in user }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/authentication_pages_spec.rb:31:in `block (4 levels) in <top (required)>'
+
+  10) Authentication signin with valid information 
+     Failure/Error: before { sign_in user }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/authentication_pages_spec.rb:31:in `block (4 levels) in <top (required)>'
+
+  11) Authentication signin with valid information 
+     Failure/Error: before { sign_in user }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/authentication_pages_spec.rb:31:in `block (4 levels) in <top (required)>'
+
+  12) Authentication signin with valid information 
+     Failure/Error: before { sign_in user }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/authentication_pages_spec.rb:31:in `block (4 levels) in <top (required)>'
+
+  13) Authentication signin with valid information 
+     Failure/Error: before { sign_in user }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/authentication_pages_spec.rb:31:in `block (4 levels) in <top (required)>'
+
+  14) Authentication signin with valid information followed by signout 
+     Failure/Error: before { sign_in user }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/authentication_pages_spec.rb:31:in `block (4 levels) in <top (required)>'
+
+  15) User pages index should list each user
+     Failure/Error: sign_in FactorGirl.create(:user)
+     NameError:
+       uninitialized constant FactorGirl
+     # ./spec/requests/user_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+
+  16) User pages index 
+     Failure/Error: sign_in FactorGirl.create(:user)
+     NameError:
+       uninitialized constant FactorGirl
+     # ./spec/requests/user_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+
+  17) User pages index 
+     Failure/Error: sign_in FactorGirl.create(:user)
+     NameError:
+       uninitialized constant FactorGirl
+     # ./spec/requests/user_pages_spec.rb:9:in `block (3 levels) in <top (required)>'
+
+  18) User pages edit with valid information 
+     Failure/Error: sign_in user
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:78:in `block (3 levels) in <top (required)>'
+
+  19) User pages edit with valid information 
+     Failure/Error: sign_in user
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:78:in `block (3 levels) in <top (required)>'
+
+  20) User pages edit with valid information 
+     Failure/Error: sign_in user
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:78:in `block (3 levels) in <top (required)>'
+
+  21) User pages edit with valid information 
+     Failure/Error: sign_in user
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:78:in `block (3 levels) in <top (required)>'
+
+  22) User pages edit with valid information 
+     Failure/Error: sign_in user
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:78:in `block (3 levels) in <top (required)>'
+
+  23) User pages edit with invalid information 
+     Failure/Error: sign_in user
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:78:in `block (3 levels) in <top (required)>'
+
+  24) User pages edit page 
+     Failure/Error: sign_in user
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:78:in `block (3 levels) in <top (required)>'
+
+  25) User pages edit page 
+     Failure/Error: sign_in user
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:78:in `block (3 levels) in <top (required)>'
+
+  26) User pages edit page 
+     Failure/Error: sign_in user
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/support/utilities.rb:19:in `sign_in'
+     # ./spec/requests/user_pages_spec.rb:78:in `block (3 levels) in <top (required)>'
+
+  27) User pages profile page 
+     Failure/Error: before { visit user_path(user) }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/user_pages_spec.rb:27:in `block (3 levels) in <top (required)>'
+
+  28) User pages profile page 
+     Failure/Error: before { visit user_path(user) }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/user_pages_spec.rb:27:in `block (3 levels) in <top (required)>'
+
+  29) User pages signup with valid information should create a user
+     Failure/Error: before { visit signup_path }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/user_pages_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+  30) User pages signup with valid information after saving the user 
+     Failure/Error: before { visit signup_path }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/user_pages_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+  31) User pages signup with valid information after saving the user 
+     Failure/Error: before { visit signup_path }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/user_pages_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+  32) User pages signup with valid information after saving the user 
+     Failure/Error: before { visit signup_path }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/user_pages_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+  33) User pages signup with invalid information should not create a user
+     Failure/Error: before { visit signup_path }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/user_pages_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+  34) User pages signup page 
+     Failure/Error: before { visit signup_path }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/user_pages_spec.rb:34:in `block (3 levels) in <top (required)>'
+
+  35) User pages signup page 
+     Failure/Error: before { visit signup_path }
+     SyntaxError:
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting ']'
+       before_action :signed_in_user, only: [:index :edit, :update]
+                                                     ^
+       /home/jorge/code/rails_projects/sample_app/app/controllers/users_controller.rb:2: syntax error, unexpected ']', expecting :: or '[' or '.'
+     # ./spec/requests/user_pages_spec.rb:34:in `block (3 levels) in <top (required)>'
+
+Finished in 2.09 seconds
+71 examples, 35 failures
+
+Failed examples:
+
+rspec ./spec/requests/authentication_pages_spec.rb:101 # Authentication authorization as wrong user submitting a PATCH request to the Users#update action 
+rspec ./spec/requests/authentication_pages_spec.rb:96 # Authentication authorization as wrong user submitting a GET request to the Users#edit action 
+rspec ./spec/requests/authentication_pages_spec.rb:95 # Authentication authorization as wrong user submitting a GET request to the Users#edit action 
+rspec ./spec/requests/authentication_pages_spec.rb:82 # Authentication authorization for non-signed-in users in the Users controller visiting the user index 
+rspec ./spec/requests/authentication_pages_spec.rb:77 # Authentication authorization for non-signed-in users in the Users controller submitting to the update action 
+rspec ./spec/requests/authentication_pages_spec.rb:72 # Authentication authorization for non-signed-in users in the Users controller visiting the edit page 
+rspec ./spec/requests/authentication_pages_spec.rb:62 # Authentication authorization for non-signed-in users when attempting to visit a protected page after signin in should render the disired protection page
+rspec ./spec/requests/authentication_pages_spec.rb:33 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:38 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:35 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:34 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:36 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:37 # Authentication signin with valid information 
+rspec ./spec/requests/authentication_pages_spec.rb:42 # Authentication signin with valid information followed by signout 
+rspec ./spec/requests/user_pages_spec.rb:18 # User pages index should list each user
+rspec ./spec/requests/user_pages_spec.rb:16 # User pages index 
+rspec ./spec/requests/user_pages_spec.rb:15 # User pages index 
+rspec ./spec/requests/user_pages_spec.rb:105 # User pages edit with valid information 
+rspec ./spec/requests/user_pages_spec.rb:109 # User pages edit with valid information 
+rspec ./spec/requests/user_pages_spec.rb:106 # User pages edit with valid information 
+rspec ./spec/requests/user_pages_spec.rb:108 # User pages edit with valid information 
+rspec ./spec/requests/user_pages_spec.rb:107 # User pages edit with valid information 
+rspec ./spec/requests/user_pages_spec.rb:91 # User pages edit with invalid information 
+rspec ./spec/requests/user_pages_spec.rb:85 # User pages edit page 
+rspec ./spec/requests/user_pages_spec.rb:84 # User pages edit page 
+rspec ./spec/requests/user_pages_spec.rb:83 # User pages edit page 
+rspec ./spec/requests/user_pages_spec.rb:30 # User pages profile page 
+rspec ./spec/requests/user_pages_spec.rb:29 # User pages profile page 
+rspec ./spec/requests/user_pages_spec.rb:60 # User pages signup with valid information should create a user
+rspec ./spec/requests/user_pages_spec.rb:70 # User pages signup with valid information after saving the user 
+rspec ./spec/requests/user_pages_spec.rb:69 # User pages signup with valid information after saving the user 
+rspec ./spec/requests/user_pages_spec.rb:68 # User pages signup with valid information after saving the user 
+rspec ./spec/requests/user_pages_spec.rb:47 # User pages signup with invalid information should not create a user
+rspec ./spec/requests/user_pages_spec.rb:37 # User pages signup page 
+rspec ./spec/requests/user_pages_spec.rb:36 # User pages signup page 
+
+Randomized with seed 34425
+
